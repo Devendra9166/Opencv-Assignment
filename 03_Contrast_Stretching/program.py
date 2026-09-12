@@ -1,0 +1,18 @@
+import cv2
+import numpy as np
+
+img = cv2.imread("03_Contrast_Stretching/input.jpeg", cv2.IMREAD_GRAYSCALE)
+
+if img is None:
+    print("Error: Image not found!")
+    exit()
+
+min_intensity = np.min(img)
+max_intensity = np.max(img)
+
+result = ((img - min_intensity) / (max_intensity - min_intensity) * 255).astype(np.uint8)
+
+cv2.imwrite("output.jpg", result)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
