@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread('14_Frequency_LPF/input.jpeg', 0)
+image = cv2.imread('input.jpeg', 0)
 
 if image is None:
     print("Image not found")

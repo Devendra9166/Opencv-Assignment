@@ -1,8 +1,8 @@
 # Computer Vision Unit II Programming Assignment
 
-# Name: Anand kumar
+# Name: Devendra
 
-# Enrollment Number: 2402309013
+# Enrollment Number: 2402309035
 
 # Class/Section: BCA 5A 
 

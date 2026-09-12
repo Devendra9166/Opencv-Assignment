@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-image = cv2.imread('13_Magnitude_Spectrum/input.jpeg', 0)
+image = cv2.imread('input.jpeg', 0)
 
 if image is None:
     print("Image not found")

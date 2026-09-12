@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("03_Contrast_Stretching/input.jpeg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("input.jpeg", cv2.IMREAD_GRAYSCALE)
 
 if img is None:
     print("Error: Image not found!")

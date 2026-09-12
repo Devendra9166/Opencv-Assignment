@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread('12_DFT/input.jpeg', 0)
+image = cv2.imread('input.jpeg', 0)
 
 if image is None:
     print("Image not found")
@@ -30,7 +30,7 @@ magnitude = cv2.normalize(
 
 output = np.uint8(magnitude)
 
-cv2.imwrite('12_DFT/output.png', output)
+cv2.imwrite('output.png', output)
 
 print("Original image shape:", image.shape)
 print("DFT result shape:", dft.shape)

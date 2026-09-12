@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread('08_Median_Filter/input.jpeg')
+image = cv2.imread('input.jpeg')
 
 if image is None:
     print("Image not found")

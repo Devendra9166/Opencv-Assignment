@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread('10_Sharpening/input.jpeg')
+image = cv2.imread('input.jpeg')
 
 if image is None:
     print("Image not found")

@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread('15_Frequency_HPF/input.jpeg', 0)
+image = cv2.imread('input.jpeg', 0)
 
 if image is None:
     print("Image not found")
@@ -38,8 +38,6 @@ result = cv2.normalize(result, None, 0, 255, cv2.NORM_MINMAX)
 result = np.uint8(result)
 
 cv2.imwrite('output.png', result)
-
-cv2.imshow("HPF Output", result)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()

@@ -1,7 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 
-image = cv2.imread('05_Histogram_Equalization/input.jpeg', 0)
+image = cv2.imread('input.jpeg', 0)
 
 if image is None:
     print("Image not found")
@@ -9,7 +9,7 @@ if image is None:
 
 equalized = cv2.equalizeHist(image)
 
-cv2.imwrite('equalized.png', equalized)
+cv2.imwrite('histogram_comparison.png', equalized)
 
 hist1 = cv2.calcHist([image], [0], None, [256], [0, 256])
 hist2 = cv2.calcHist([equalized], [0], None, [256], [0, 256])
