@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread('01_Grayscale/input.jpeg')
+image = cv2.imread('input.jpeg')
 
 if image is None:
     print("Image is not found")
